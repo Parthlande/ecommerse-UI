@@ -1,0 +1,190 @@
+/* ---------- Season Sale Text ---------- */
+.season-sale {
+  color: #007bff;       /* Blue text */
+  font-size: 2rem;      /* Increase size */
+  font-weight: 600;     /* Bold */
+  font-family: cursive; /* Cursive style */
+  margin: 0.5rem 0;
+}
+
+/* ---------- Root Container ---------- */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0rem;
+  text-align: center;
+  box-sizing: border-box;
+  background: #ecf3fa; /* change if needed */
+}
+
+/* ---------- Logo Styles ---------- */
+.logo {
+  height: 6em;
+  padding: 1em;
+  will-change: filter;
+  transition: filter 300ms ease;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Logo Spin Animation */
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* ---------- Feature Icons ---------- */
+.feature-icon {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+/* ---------- Card Container ---------- */
+.card {
+  padding: 1.5em;
+  margin: 1rem auto;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 100%; 
+  max-width: 600px;
+}
+
+/* ---------- Docs Link ---------- */
+.read-the-docs {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive Adjustments ---------- */
+
+/* Large screens (1024px and below) */
+@media (max-width: 1024px) {
+  .logo {
+    height: 5em;
+  }
+}
+
+/* Tablets / Medium devices (768px and below) */
+@media (max-width: 768px) {
+  #root {
+    padding: 0.8rem;
+  }
+
+  .logo {
+    height: 4em;
+  }
+
+  .card {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .season-sale {
+    font-size: 1.8rem;
+  }
+}
+
+/* Small devices / Mobile phones (480px and below) */
+@media (max-width: 480px) {
+  #root {
+    padding: 0.5rem;
+  }
+
+  .logo {
+    height: 3.5em;
+    padding: 0.5em;
+  }
+
+  .card {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .read-the-docs {
+    font-size: 0.8rem;
+  }
+
+  .season-sale {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra adjustments for very small devices (360px and below) */
+@media (max-width: 360px) {
+  .logo {
+    height: 3em;
+    padding: 0.4em;
+  }
+
+  .season-sale {
+    font-size: 1.3rem;
+  }
+
+  .card {
+    padding: 0.6rem;
+  }
+
+  .read-the-docs {
+    font-size: 0.75rem;
+  }
+}
+
+/* ---------- Utility Classes ---------- */
+.text-center-xs {
+  text-align: center;
+}
+
+.flex-column-xs {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ProductCard Image */
+.product-img {
+  height: 200px;
+  object-fit: contain;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Adjust card height on mobile */
+@media (max-width: 768px) {
+  .product-img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-img {
+    height: 150px;
+  }
+
+  .product-card {
+    margin-bottom: 1rem;
+  }
+
+  .product-card .fs-6 {
+    font-size: 0.9rem;
+  }
+
+  .product-card p.fs-5 {
+    font-size: 1rem;
+  }
+}
