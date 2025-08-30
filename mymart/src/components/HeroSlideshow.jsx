@@ -3,7 +3,7 @@ import { Container, Row, Col, Button, Carousel } from "react-bootstrap";
 
 function HeroSlideshow() {
   return (
-    <Carousel fade interval={3000} wrap={true} indicators={true}>
+    <Carousel fade interval={2000} wrap={true} indicators={true}>
   {/* Slide 1 */}
   <Carousel.Item>
     <Container className="py-5">
